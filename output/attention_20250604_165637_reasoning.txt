@@ -1,0 +1,7 @@
+Step 1: Analyze NVIDIA optimizations
+  Observation: Kevin optimized using: vectorization
+  Reasoning: These target NVIDIA's 32-thread warps and SM architecture
+
+Step 2: Identify AMD architectural differences
+  Observation: AMD GPUs have: 64-thread wavefronts, 64KB LDS per CU, different cache hierarchy
+  Reasoning: Must adapt thread-level parallelism and memory usage patterns

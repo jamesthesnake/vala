@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/workspace/vala/demo.py", line 9, in <module>
+    from pipeline import AMDOptimizationPipeline, format_reasoning_trace
+  File "/workspace/vala/pipeline.py", line 9, in <module>
+    from kevin_interface import KevinInterface
+ModuleNotFoundError: No module named 'kevin_interface'

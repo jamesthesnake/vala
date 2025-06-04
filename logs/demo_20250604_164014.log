@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/vala/demo.py", line 12, in <module>
+    def save_results(results: Dict, output_dir: str = "output"):
+                              ^^^^
+NameError: name 'Dict' is not defined. Did you mean: 'dict'?

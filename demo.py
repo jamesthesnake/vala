@@ -8,7 +8,7 @@ import os
 from datetime import datetime
 from pipeline import AMDOptimizationPipeline, format_reasoning_trace
 from test_models import TEST_MODELS
-
+from typing import Dict,List
 def save_results(results: Dict, output_dir: str = "output"):
     """Save results to files"""
     os.makedirs(output_dir, exist_ok=True)

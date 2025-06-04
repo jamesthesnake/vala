@@ -1,0 +1,17 @@
+Step 1: Analyze NVIDIA optimizations
+  Observation: Kevin optimized using: shared_memory, tiling, coalescing
+  Reasoning: These target NVIDIA's 32-thread warps and SM architecture
+
+Step 2: Identify AMD architectural differences
+  Observation: AMD GPUs have: 64-thread wavefronts, 64KB LDS per CU, different cache hierarchy
+  Reasoning: Must adapt thread-level parallelism and memory usage patterns
+
+Step 3: Adapt tile dimensions
+  Observation: Kevin used 16x16 tiles for 32-thread warps
+  Reasoning: AMD's 64-thread wavefronts can process more data per wave
+  Adaptation: Consider 32x16 tiles for better wavefront utilization
+
+Step 4: Optimize LDS (Local Data Share) usage
+  Observation: Kevin used shared memory for data reuse
+  Reasoning: AMD has 64KB LDS per CU with different bank conflict patterns
+  Adaptation: Adjust padding and access patterns for AMD's LDS banking
