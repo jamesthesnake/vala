@@ -1,0 +1,23 @@
+# Core dependencies for Kevin-32B
+torch>=2.0.0
+transformers>=4.40.0
+accelerate>=0.20.0
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+
+# For 4-bit quantization (recommended for single GPU)
+bitsandbytes>=0.41.0
+
+# CUDA compilation dependencies (for running generated kernels)
+ninja>=1.11.0
+
+# Optional but useful
+huggingface-hub>=0.16.0
+safetensors>=0.3.1
+scipy>=1.10.0
+numpy>=1.24.0
+
+# For monitoring and debugging
+nvidia-ml-py>=12.535.77
+gpustat>=1.1.0
+tqdm>=4.65.0
