@@ -21,3 +21,9 @@ numpy>=1.24.0
 nvidia-ml-py>=12.535.77
 gpustat>=1.1.0
 tqdm>=4.65.0
+torch>=2.0.0
+transformers>=4.35.0
+accelerate>=0.24.0
+sentencepiece
+protobuf
+numpy
